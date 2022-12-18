@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- GUAPO EL QUE LO LEA :3 -->
+<html class="full-height">
+  <head>
+    <title>Kiara Fey Website</title>
+    <%= favicon_link_tag asset_path("vacallina-28.png") %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="full-height">
+    <%= yield %>
+    <div class="social-cats">
+      <a href="https://www.twitch.tv/kiarafey" target="_blank"><%= image_tag("TwitchCat.png", class: "twitch-cat", draggable: "false") %></a>
+      <a href="https://www.youtube.com/channel/UCdhHxGJEfDjodi5QqPczAEg" target="_blank"><%= image_tag("YouTubeCat.png", class: "youtube-cat", draggable: "false") %></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.light-pink-bg {
+  background-color: #ffe4fd;
+}
+
+.yakuza-bg {
+  background-image: image-url('Yakuza.jpeg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(255, 226, 240, 0.9);
+}
+
+.font-large {
+  font-size: 6vw;
+}
+
+.font-shadow-white {
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.fixed-center {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.non-selectable {
+  user-select: none;
+  pointer-events: none;
+}
+
+.floating-row {
+  float: left;
+  position: absolute;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.social-cats {
+  position: fixed;
+}
+
+.twitch-cat {
+  transition: transform 330ms ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  left: -2vw;
+  bottom: -6vw;
+  width: 15vw;
+  &:hover {
+    transform: scale(1.2) translate(20px, -20px);
+  }
+}
+
+.youtube-cat {
+  transition: transform 330ms ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  right: -2vw;
+  bottom: -6vw;
+  width: 15vw;
+  &:hover {
+    transform: scale(1.2) translate(-20px, -20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .youtube-cat {
+    right: -4vw;
+    bottom: -15vw;
+    width: 32vw;
+  }
+  .twitch-cat {
+    left: -4vw;
+    bottom: -16vw;
+    width: 32vw;
+  }
+}
+
+#main-text {
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: initial;
+  }
+}

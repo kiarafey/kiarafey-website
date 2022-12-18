@@ -1,0 +1,39 @@
+:root {
+  --width: 120px;
+  --x-speed: 7s;
+  --y-speed: 3s;
+  --transition-speed: 2.2s;
+}
+
+.el { 
+  width: var(--width);
+  height: var(--width);
+}
+
+.x {
+  float: left;
+  position: absolute;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  animation: x var(--x-speed) linear infinite alternate;
+  
+  img {
+    cursor: pointer;
+  }
+}
+
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - var(--width)));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - var(--width))) rotate(360deg);
+  }
+}

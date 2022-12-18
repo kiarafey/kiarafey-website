@@ -1,0 +1,22 @@
+<div class="light-pink-bg full-height display-flex">
+  <%= render 'vacallina' %>
+  <div class="container display-flex">
+    <div class="floating-row font-shadow-white non-selectable">
+      <div class="row">
+        <div id="counter" class="col">
+          <b>Número de guapos aquí: <span id="counter-number"><%= ActionCable.server.connections.length %></span></b>
+        </div>
+      </div>
+      <div class="row">
+        <div id="vacallina-counter" class="col">
+          <b>Vacallinas: <span id="vacallina-number">1</span></b>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center flex-auto">
+      <div id="main-text" class="col text-centered fixed-center font-shadow-white non-selectable">
+        <h2 class="font-large">Guapo el que lo lea</h2>
+      </div>
+    </div>
+  </div>
+</div>
